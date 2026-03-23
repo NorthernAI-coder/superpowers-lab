@@ -48,6 +48,19 @@ Enables Claude Code to control interactive CLI tools (vim, git rebase -i, menuco
 
 See [skills/using-tmux-for-interactive-commands/SKILL.md](skills/using-tmux-for-interactive-commands/SKILL.md) for full documentation.
 
+### windows-vm
+
+Create, manage, or connect to a headless Windows 11 VM running in Docker with KVM acceleration and SSH access — no RDP or GUI required.
+
+**Use cases:**
+- Spin up a Windows environment for testing or development
+- Run Claude Code on Windows via SSH
+- Test cross-platform behavior without leaving the terminal
+
+**How it works:** Uses [dockur/windows](https://github.com/dockur/windows) to run Windows 11 in a Docker container with KVM acceleration. Manages the full lifecycle: create, start, stop, restart, SSH, and status checks. Includes automated setup of OpenSSH Server, Node.js, and Claude Code inside the VM.
+
+See [skills/windows-vm/SKILL.md](skills/windows-vm/SKILL.md) for full documentation.
+
 ## Installation
 
 ```bash
